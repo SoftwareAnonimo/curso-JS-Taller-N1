@@ -1,4 +1,4 @@
-// Codigo del Cuadrado
+// Codigo del Cuadrado hola
 
 console.group("Cuadrados");
 
@@ -85,3 +85,16 @@ function calcularAreaTriangulo() {
     const area = areaTriangulo(value);
     alert(area);
 }
+
+function altura(lado1,lado2,base) {
+    if (lado1 === lado2 && lado1 !== base){
+        alert("Isosceles")
+        const altura = Math.sqrt(lado1**2 - base**2 / 4)
+    }else{
+        alert("No lo Se")
+    }
+};
+
+var x = 2;
+
+console.log(x);
