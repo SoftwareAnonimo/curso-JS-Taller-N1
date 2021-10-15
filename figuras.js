@@ -51,3 +51,68 @@ function areaCirculo(radio) {
 }
 
 console.groupEnd();
+
+//Aqui interactuamos con HTML
+// Cuadrado
+
+function calcularPerimetroCuadrado() {
+    const input = document.getElementById("inputCuadrado");
+    const value = input.value;
+
+    const permietro = perimetroCuadrado(value);
+    alert("El Permietro del Cuadrado es de: " + permietro);
+};
+
+function calcularAreaCuadrado() {
+    const input = document.getElementById("inputCuadrado");
+    const value = input.value;
+
+    const area = areaCuadrado(value);
+    alert("El Area del Cuadrado es de: " + area);
+};
+
+// Triangulo
+
+function calcularPerimetroTriangulo() {
+    const input1 = document.getElementById("inputTriangulo1");
+    const value1 = Number (input1.value);
+
+    const input2 = document.getElementById("inputTriangulo2");
+    const value2 = Number (input2.value);
+
+    const base = document.getElementById("inputBaseTriangulo");
+    const value3 = Number(base.value);
+
+    const perimetro = perimetroTriangulo(value1,value2,value3);
+    alert("El Permietro del Triangulo es de " + perimetro);
+};
+
+function calcularAreaTriangulo() {
+    const input1 = document.getElementById("inputTriangulo1");
+    const value1 = Number (input1.value);
+
+    const input2 = document.getElementById("inputTriangulo2");
+    const value2 = Number (input2.value);
+
+    const base = document.getElementById("inputBaseTriangulo");
+    const value3 = Number(base.value);
+
+    const area = areaTriangulo(value1,value2,value3);
+    alert("El Area del Triangulo es de " + area);
+};
+
+function calcularPerimetroCirculo() {
+    const input = document.getElementById("inputCirculo");
+    const value = input.value;
+
+    const permietro = perimetroCirculo(value);
+    alert("El Permietro del Circulo es de: " + permietro);
+};
+
+function calcularAreaCirculo() {
+    const input = document.getElementById("inputCirculo");
+    const value = input.value;
+
+    const area = areaCirculo(value);
+    alert("El Area del Circulo es de: " + area);
+};
