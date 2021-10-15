@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: brown;
+    color: white;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+}
+
+main {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+     "a b"
+     "c c";
+    gap: 40px;
+    align-self: center;
+    width: 100%;
+    height: 500px;
+}
+ 
+/* comienzo de Cuadrado y Circulo */
+
+.div-padre-cuadrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: a;
+}
+
+.section{
+    box-shadow: 0 5px 20px 0px black;
+    border-radius: 15px;
+    padding: 35px;
+}
+
+.div-padre-circulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: c;
+}
+
+.div-cuadrado-circulo {
+    text-align: center;
+}
+
+.div-cuadrado-circulo h2 {
+    margin-bottom: 15px;
+}
+
+.label-input_cua-cir {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.label-input_cua-cir label {
+    font-size: 20px;
+}
+
+.label-input_cua-cir div input {
+    width: 20%;
+    height: 25px;
+    margin: 15px 0 15px 0;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.button-cua-cir {
+    width: 150px;
+    height: 35px;
+    background-color: white;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    color:brown;
+    margin: 10px 10px 0 10px;
+    box-shadow: 0 10px 20px -10px black;
+    cursor: pointer;
+}
+
+/* Fin de Cuadrado y Circulo */
+
+/* comienzo de triangulo */
+
+.div-padre-triangulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: b;
+}
+
+.div-triangulo {
+    text-align: center;
+}
+
+.div-triangulo h2 {
+    margin-bottom: 15px;
+}
+
+.form-tri {
+    display: flex;
+    flex-direction: column;
+}
+
+.padre-labels-input-tri {
+    display: flex;
+}
+
+.lado-tri {
+    display: flex;
+    flex-direction: column;
+}
+
+.label-tri {
+    font-size: 20px;
+}
+
+.input-tri {
+    width: 55%;
+    height: 25px;
+    margin: 15px 0 15px 0;
+    text-align: center;
+    border: none;
+    outline: none;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.button-tri {
+    width: 150px;
+    height: 35px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    color:brown;
+    font-weight: bold;
+    margin: 10px 10px 0 10px;
+    box-shadow: 0 10px 20px -10px black;
+    cursor: pointer;
+}
