@@ -116,3 +116,15 @@ function calcularAreaCirculo() {
     const area = areaCirculo(value);
     alert("El Area del Circulo es de: " + area);
 };
+
+//tore
+
+function trianguloIsosceles(lado1, lado2, base) {
+    if(lado1 === lado2 && lado1 != base) {
+        alert("Isosceles")
+        const altura = Math.sqrt(lado**2 - base**2 / 4)
+        console.log("altura")
+    }else{
+        alert.log("No lo se")
+    }
+};
